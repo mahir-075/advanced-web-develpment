@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: lightgray;
+        font-family: sans-serif;
+      }
+      .mstari {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .mstari label {
+        width: 150px;
+        display: inline-block;
+      }
+      input[type="text"], input[type="password"], input[type="email"], select, textarea {
+        flex: 1;
+        padding: 5px;
+      }
+      table {
+        border-spacing: 20px 0;
+      }
+      td {
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <b>
+      <fieldset>
+        <legend align="center">PIZZA ORDER FORM</legend>
+        
+        <fieldset>
+          <legend>Delivery Address</legend>
+          <table width="100%" border="0">
+            <tr>
+              <td>
+                <div class="mstari">
+                  <label>Full Name:</label>
+                  <input type="text" name="fullname" placeholder="Full Name" />
+                </div>
+                <div class="mstari">
+                  <label>Phone:</label>
+                  <input type="text" name="phone" placeholder="Phone" />
+                </div>
+                <div class="mstari">
+                  <label>Password:</label>
+                  <input type="password" name="password" placeholder="Password" />
+                </div>
+              </td>
+              <td>
+                <div class="mstari">
+                  <label>Street Address:</label>
+                  <input type="text" name="street" placeholder="Address" />
+                </div>
+                <div class="mstari">
+                  <label>Email:</label>
+                  <input type="email" name="email" placeholder="Email" />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment Information</legend>
+          <table width="100%" border="0">
+            <tr>
+              <td>
+                <div class="mstari">
+                  <label>Card Type:</label>
+                  <select name="cardtype">
+                    <option value="visa">Visa</option>
+                  </select>
+                </div>
+                <div class="mstari">
+                  <label>Name on Card:</label>
+                  <input type="text" name="cardname" placeholder="Name" />
+                </div>
+              </td>
+              <td>
+                <div class="mstari">
+                  <label>Card Number:</label>
+                  <input type="text" name="cardnumber" placeholder="Card Number" />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>customize Your Pizza</legend>
+          <table width="100%" border="0">
+            <tr>
+              <td>
+                <div class="mstari">
+                  <label>Pizza size:</label>
+                  <select name="size">
+                    <option value="large">Large</option>
+                  </select>
+                </div>
+                <div class="mstari">
+                  <label>Spices:</label>
+                  <span>
+                    Black Pepper <input type="checkbox" name="spices" value="blackpepper" />
+                    Bell Pepper <input type="checkbox" name="spices" value="bellpepper" />
+                    Mayonaise <input type="checkbox" name="spices" value="mayonnaise" />
+                  </span>
+                </div>
+                <div class="mstari">
+                  <label>Other requirements:</label>
+                  <textarea name="requirements" placeholder="Any other requirements" cols="30" rows="3"></textarea>
+                </div>
+              </td>
+              <td>
+                <div class="mstari">
+                  <label>Quantity:</label>
+                  <input type="text" name="quantity" />
+                </div>
+                <div class="mstari">
+                  <label>Meat:</label>
+                  <span>
+                    Fish <input type="radio" name="meat" value="fish" />
+                    Cow <input type="radio" name="meat" value="cow" />
+                    Chicken <input type="radio" name="meat" value="chicken" />
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <div style="text-align: center; margin-top: 20px;">
+          <button type="button" style="padding: 10px 20px;">Clear Order</button>
+          <button type="submit" style="padding: 10px 20px; margin-left: 20px;">Place Order</button>
+        </div>
+      </fieldset>
+    </b>
+  </body>
+</html>
